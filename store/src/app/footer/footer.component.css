@@ -1,0 +1,20 @@
+.footer-text{
+    color: rgb(170, 8, 97);
+    font-size: small;
+}
+
+p{
+    margin: 0.2em;
+}
+
+::ng-deep body{
+    background-color: white !important;
+}
+
+.footer{
+    display: block;
+    height: auto;
+    padding: 2em;
+    border-top: 1px solid black ;
+    text-align: center;
+}

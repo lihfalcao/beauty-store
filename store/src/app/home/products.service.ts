@@ -20,7 +20,7 @@ export class ProductService {
     }
 
     showProduct(id?: "string"): Observable<Product[]> {
-        return this.http.get<Product[]>(`${BEAUTY_API}/users/${id}`)
+        return this.http.get<Product[]>(`${BEAUTY_API}/products/${id}`)
     }
 
 }

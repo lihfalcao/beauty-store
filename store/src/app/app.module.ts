@@ -13,6 +13,8 @@ import { RegisterComponent } from './register/register.component';
 import { MenuComponent } from './menu/menu.component';
 import { LoginService } from './login/login.service';
 import { ProductService } from './home/products.service';
+import { ProductComponent } from './product/product.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { ProductService } from './home/products.service';
         LoginComponent,
         HomeComponent,
         RegisterComponent,
-        MenuComponent
+        MenuComponent,
+        ProductComponent,
+        FooterComponent
     ],
     providers: [UserService,LoginService, ProductService],
     bootstrap: [AppComponent],
