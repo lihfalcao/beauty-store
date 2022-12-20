@@ -2,6 +2,10 @@
     display: inline;
 }
 
+::ng-deep body{
+    background-color: white !important;
+}
+
 .menu-items{
     display: inline;
     margin-left: 3em;
@@ -20,4 +24,16 @@
     padding: 2em;
     border-bottom: 1px solid rgb(170, 8, 97) ;
     box-shadow: 2px 2px 5px rgb(140, 137, 137);
+}
+
+.name{
+    display: inline;
+    margin-left: 3em;
+    color: rgb(170, 8, 97);
+    cursor:pointer;
+    font-weight: bold;
+}
+
+.name:hover{
+    color: rgb(85, 44, 67)
 }

@@ -1,0 +1,18 @@
+<app-menu></app-menu>
+<div class="container">
+    <div class="row" style="margin-left: 5em;">
+        <div class="product-box col-6">
+            <img class="picture" src="{{product.imagePath}}">
+        </div>
+        <div class="description-box col-6">
+            <p class="name">{{product.name | uppercase}}</p>
+            <p class="brand">Por {{product.brand}}</p>
+            <p class="price">{{product.price | uppercase}}</p>
+            <p class="description-title">Descrição</p>
+            <p class="description-body">{{product.about}}</p>
+            <button class="button">Adicionar ao carrinho</button>
+        </div>
+
+    </div>
+  </div>
+<app-footer [brand]="product?.brand"></app-footer>

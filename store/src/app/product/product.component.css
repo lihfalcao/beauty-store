@@ -1,0 +1,63 @@
+::ng-deep body{
+    background-color: white !important;
+}
+
+.picture{
+    width: 30em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 2em;
+    border: 1px solid black;
+    border-radius: 1em;
+    box-shadow: 2px 2px 5px rgb(140, 137, 137);
+}
+
+.name{
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: 2em;
+}
+
+.brand{
+    font-size: larger;
+    font-weight: bolder;
+    color: gray;
+}
+
+.price{
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-top: 2em;
+}
+
+.description-title{
+    margin-top: 3em;
+    font-weight: bold;    
+    text-transform: uppercase;
+    color: rgb(170, 8, 97);
+}
+
+.description-body{
+    text-align: justify;
+    font-size: small;
+}
+
+.button{
+    background-color: rgb(170, 8, 97);
+    color: white;
+    font-weight: bold;
+    border: 1px solid rgb(124, 4, 70) ;
+    padding: 0.5em;
+    float: right;
+    border-radius: 1em;
+    box-shadow: 2px 2px 5px rgb(140, 137, 137);
+
+}
+
+button:hover{
+    background-color: rgb(205, 2, 114);
+}
+
+.description-box{
+    margin-bottom: 2em;
+}
