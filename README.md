@@ -8,7 +8,7 @@ Projeto em Angular destinado para a disciplina de Topicos Especiais em Web
 - [x] Criar o layout da aplicação com componentes, ou seja, o cabeçalho e rodapé precisam ser componentes.
 - [x] Usar pelo menos dois tipos de data-binding (Interpolation, Property Binding, Event Binding e Two Way Data Binding).
 - [ ] Passar dados via hierarquia de componentes, ou seja, usando @Input ou @Output.
-- [ ] Mapear componentes à rotas no módulo de rotas.
+- [x] Mapear componentes à rotas no módulo de rotas.
 - [x] Criar navegação entre páginas por meio de rotas.
 - [x] Passar dados entre componentes que representam diferentes telas via parâmetros de rotas. 
 - [x] Validar campos do formulário com REGEX e apresentar os erros.
