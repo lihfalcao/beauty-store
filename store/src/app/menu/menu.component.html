@@ -1,0 +1,7 @@
+<div id="menu" class="menu">
+    <h1 class="menu-title">Beauty Store</h1>
+    <a [routerLink]="['/home']" class="menu-items">Home</a>
+    <a *ngIf="logged" (click)="logout()" class="menu-items" title="Clique para deslogar">{{data}}</a>
+    <a *ngIf="!logged" [routerLink]="['/registrar']" class="menu-items">Registrar</a>
+    <a *ngIf="!logged" [routerLink]="['/login']" class="menu-items">Entrar</a>
+</div> 
