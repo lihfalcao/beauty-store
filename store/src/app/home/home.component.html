@@ -1,1 +1,12 @@
 <app-menu></app-menu>
+<div class="container" >
+    <div class="row" style="margin-left: 5em;">
+        <div class="product-box col-md-2" *ngFor="let product of products">
+            <img style="width: 10em;" src="{{product.imagePath}}">
+            <p class="name">{{product.name | uppercase}}</p>
+            <p class="brand">{{product.brand}}</p>
+            <p class="price">{{product.price}}</p>
+            <a [routerLink]="['/produto', product.id]" class="link">Ver mais</a>
+        </div>
+    </div>
+  </div>

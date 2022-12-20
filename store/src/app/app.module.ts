@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { MenuComponent } from './menu/menu.component';
 import { LoginService } from './login/login.service';
+import { ProductService } from './home/products.service';
 
 
 @NgModule({
@@ -22,7 +23,7 @@ import { LoginService } from './login/login.service';
         RegisterComponent,
         MenuComponent
     ],
-    providers: [UserService,LoginService],
+    providers: [UserService,LoginService, ProductService],
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,
