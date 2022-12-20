@@ -1,0 +1,46 @@
+<div class="box-login" style="margin-top:6%">
+    <form [formGroup]="loginForm" (ngSubmit)="submit(this.loginForm.value)" #formDir="ngForm">
+    <div style="margin-top:4em;">
+        <div class="form-group">
+            <label for="username" class="label">Usuário</label>
+            <br>
+        <input 
+            type="text" 
+            formControlName="username" 
+            class="form-control"
+            placeholder="Digite seu usuário"
+            required
+            />
+            <div *ngIf="this.loginForm.get('username').invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="this.loginForm.get('username').errors?.['required']">O usuário é obrigatório</p>  
+            </div>
+            <p class="validation-error" *ngIf="wrong && !this.loginForm.get('username').errors?.['required']">Dados inválidos, tente novamente</p>
+        </div>
+        <br>
+        <label for="password" class="label">Senha</label>
+        <br>
+        <div class="form-group">
+        <input 
+            type="password" 
+            formControlName="password" 
+            class="form-control" 
+            placeholder="Digite sua senha"
+            required
+            />
+            <div *ngIf="this.loginForm.get('password').invalid && formDir.submitted" class="validation-error">
+                <p *ngIf="this.loginForm.get('password').errors?.['required']">O usuário é obrigatório</p>
+            </div>
+            <p class="validation-error" *ngIf="wrong && !this.loginForm.get('password').errors?.['required']">Dados inválidos, tente novamente</p>
+        </div>
+        <input 
+            type="submit"
+            value="Login"
+            class="login"
+        />
+        <br/>
+        <div style="margin-top:1em;"><a (click)="register()" id="register">Cadastre-se</a></div>
+        
+    </div>
+</form>
+
+<router-outlet></router-outlet>
